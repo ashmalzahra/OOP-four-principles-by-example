@@ -17,6 +17,5 @@ class Animal
         @number_of_legs
       end
     
-      attr_reader :name
-      attr_writer :name 
+      attr_accessor :name
   end
