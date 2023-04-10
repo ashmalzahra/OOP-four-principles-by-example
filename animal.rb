@@ -24,6 +24,6 @@ class Animal
       def number_of_legs
         @number_of_legs
       end
-    
+
       attr_accessor :name
   end
