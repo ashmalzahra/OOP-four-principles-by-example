@@ -17,11 +17,6 @@ class Animal
         @number_of_legs
       end
     
-      def name
-        @name
-      end
-    
-      def name=(value)
-        @name = value
-      end
+      attr_reader :name
+      attr_writer :name 
   end
