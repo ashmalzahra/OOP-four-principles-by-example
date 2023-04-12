@@ -34,5 +34,11 @@ class Animal
         @liked_food.is_liked?(food)
       end
 
+      def owner=(owner)
+        @owner = owner
+        owner.animals.push(self) unless owner.animals.include?(self)
+      end
+
       attr_accessor :name
+      attr_reader :owner
   end
